@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    </style>
+    <title>Assognment-05</title>
+    <!-- daisy ui -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<!-- style -->
+<style>
+    .poppins-thin {
+    font-family: "Poppins", sans-serif;
+}
+.color-1{
+    color: #00303c;
+}
+</style>
+<body class="bg-purple-200 poppins-thin color-1 h-[1111px]">
+    <div class="max-w-screen-xl mx-auto">
+        <!-- header -->
+        <header class="py-3">
+            <!-- navbar -->
+            <nav class="navbar  p-3 bg-white rounded-2xl">
+                <div class="flex-1">
+                    <img src="/assets/logo.png" alt="">
+                    <h2 class="poppins-thin color-1 text-4xl font-light ml-2">Dev<span class="font-bold">Board</span></h2>
+                </div>
+                <div class="">
+                    <div class="bg-white flex px-3 py-2 gap-3 rounded-3xl items-center mr-10 border">
+                        <img src="/assets/checkbox.png" alt="">
+                        <h1 id="task-com" class="font-bold text-3xl poppins-thin">23</h1>
+                    </div>
+                    <button id="bg-color">
+                        <img src="/assets/theme-btn.png" alt="">
+                    </button>
+                </div>
+            </nav>
+        </header>
+        <main class=" flex gap-4">
+            <div class="w-3/4 bg-white rounded-2xl">
+                <div class="flex gap-3 p-3 border-b border-dashed">
+                    <div class="bg-purple-200 flex items-center justify-center w-1/4 rounded-xl">
+                        <img class="bg-white p-3 rounded-full" src="/assets/checkbox.png" alt="">
+                        <div class="ml-5">
+                            <h2 class="font-medium">Task Assigned</h2>
+                            <h2 id="task" class="font-bold text-3xl">6</h2>
+                        </div>
+                    </div>
+                    <div id="blogs" class="bg-gradient-to-r from-[#3752FD] via-[#6C7FFA] to-[#9BA8F8] w-1/2 flex items-center rounded-xl">
+                        <img class="p-5 ml-5" src="/assets/board.png" alt="">
+                        <h2 class="font-medium text-2xl text-white">Discover Something <br> New Today!</h2>
+                    </div>
+                    <div class="bg-purple-200 w-1/4 rounded-xl flex items-center justify-center gap-2">
+                        <img class="p-4 bg-white rounded-full" src="/assets/calender.png" alt="">
+                        <div>
+                            <h2 id="day" class="text-2xl">wed,</h2>
+                            <h2 id="date" class="font-bold text-2xl">Jul 28 2025</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class=" mt-6 grid grid-cols-3 gap-4 m-3">
+                    <div class="bg-purple-200 rounded-xl p-6">
+                        <div class="flex flex-col items-start">
+                            <h2 class="bg-white px-4 py-2 rounded-lg">ShopEase</h2>
+                            <p  id="shop-title"  class="font-medium text-xl my-4">Fix Mobile Button Issue </p>
+                            <p class="text-black text-opacity-50 bg-white p-4 rounded-xl">Debug using Chrome DevTools, check for overlappin</p>
+                        </div>
+                        <div class="mt-6 flex justify-between">
+                            <div>
+                                <h2 class="text-sm">Deadline</h2>
+                                <h2 class="font-medium">21 March 2025</h2>
+                            </div>
+                            <button id="com-1" class="bg-[#3752FD] text-white py-2.5 px-5 rounded-xl">Completed</button>
+                        </div>
+                    </div>
+                    <div class="bg-purple-200 rounded-xl p-6">
+                        <div class="flex flex-col items-start">
+                            <h2 class="bg-white px-4 py-2 rounded-lg">CloudSync</h2>
+                            <p id="shop-title-2" class="font-medium text-xl my-4">Add Dark Mode</p>
+                            <p class="text-black text-opacity-50 bg-white p-4 rounded-xl">Debug using Chrome DevTools, check for overlappin</p>
+                        </div>
+                        <div class="mt-6 flex justify-between">
+                            <div>
+                                <h2 class="text-sm">Deadline</h2>
+                                <h2 class="font-medium">21 March 2025</h2>
+                            </div>
+                            <button id="com-2" class="bg-[#3752FD] text-white py-2.5 px-5 rounded-xl">Completed</button>
+                        </div>
+                    </div>
+                    <div class="bg-purple-200 rounded-xl p-6">
+                        <div class="flex flex-col items-start">
+                            <h2 class="bg-white px-4 py-2 rounded-lg">SwiftPay</h2>
+                            <p id="shop-title-3" class="font-medium text-xl my-4">Optimize  Home page</p>
+                            <p class="text-black text-opacity-50 bg-white p-4 rounded-xl">Debug using Chrome DevTools, check for overlappin</p>
+                        </div>
+                        <div class="mt-6 flex justify-between">
+                            <div>
+                                <h2 class="text-sm">Deadline</h2>
+                                <h2 class="font-medium">21 March 2025</h2>
+                            </div>
+                            <button id="com-3" class="bg-[#3752FD] text-white py-2.5 px-5 rounded-xl">Completed</button>
+                        </div>
+                    </div>
+                    <div class="bg-purple-200 rounded-xl p-6">
+                        <div class="flex flex-col items-start">
+                            <h2 class="bg-white px-4 py-2 rounded-lg">Meta</h2>
+                            <p id="shop-title-4" class="font-medium text-xl my-4">Add new emoji 🤲</p>
+                            <p class="text-black text-opacity-50 bg-white p-4 rounded-xl">Debug using Chrome DevTools, check for overlappin</p>
+                        </div>
+                        <div class="mt-6 flex justify-between">
+                            <div>
+                                <h2 class="text-sm">Deadline</h2>
+                                <h2 class="font-medium">21 March 2025</h2>
+                            </div>
+                            <button id="com-4" class="bg-[#3752FD] text-white py-2.5 px-5 rounded-xl">Completed</button>
+                        </div>
+                    </div>
+                    <div class="bg-purple-200 rounded-xl p-6">
+                        <div class="flex flex-col items-start">
+                            <h2 class="bg-white px-4 py-2 rounded-lg">Google LLC</h2>
+                            <p id="shop-title-5" class="font-medium text-xl my-4">Integrate OpenAI API </p>
+                            <p class="text-black text-opacity-50 bg-white p-4 rounded-xl">Debug using Chrome DevTools, check for overlappin</p>
+                        </div>
+                        <div class="mt-6 flex justify-between">
+                            <div>
+                                <h2 class="text-sm">Deadline</h2>
+                                <h2 class="font-medium">21 March 2025</h2>
+                            </div>
+                            <button id="com-5" class="bg-[#3752FD] text-white py-2.5 px-5 rounded-xl">Completed</button>
+                        </div>
+                    </div>
+                    <div class="bg-purple-200 rounded-xl p-6">
+                        <div class="flex flex-col items-start">
+                            <h2 class="bg-white px-4 py-2 rounded-lg">Glassdoar</h2>
+                            <p id="shop-title-6" class="font-medium text-xl my-4">Improve Job searching </p>
+                            <p class="text-black text-opacity-50 bg-white p-4 rounded-xl">Debug using Chrome DevTools, check for overlappin</p>
+                        </div>
+                        <div class="mt-6 flex justify-between">
+                            <div>
+                                <h2 class="text-sm">Deadline</h2>
+                                <h2 class="font-medium">21 March 2025</h2>
+                            </div>
+                            <button id="com-6" class="bg-[#3752FD] text-white py-2.5 px-5 rounded-xl">Completed</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class=" flex-1 flex flex-col items-center p-4 rounded-2xl bg-white">
+                <div class="flex items-center justify-center gap-3">
+                    <img src="/assets/activity.png" alt="">
+                    <h2>Activity Log</h2>
+                </div>
+                <h2 id="clear" class="bg-[#3752FD] text-xl text-white font-medium px-5 py-2.5 rounded-lg m-4">Clear History</h2>
+                <p id="message"></p>
+            </div>
+        </main>
+    </div>
+    <script>
+        function updateDate() {
+            const now = new Date();
+
+            const optionsDay = { weekday: 'short' };
+            const optionsDate = { month: 'short', day: 'numeric', year: 'numeric' };
+
+            const day = now.toLocaleDateString('en-us', optionsDay); 
+            const date = now.toLocaleDateString('en-us', optionsDate); 
+
+            document.getElementById('day').textContent = day +',';
+            document.getElementById('date').textContent = date;
+        }
+        updateDate();
+        
+    </script>
+    <script>
+        let taskLeft = 6;
+        let tastComplete = 23;
+        const message = document.getElementById('message');
+        let completedTasks = 0;
+
+        for(let i =1; i <= 6; i++){
+            let button = document.getElementById(`com-${i}`);
+
+            button.addEventListener('click',function(){
+                if(taskLeft > 0){
+                    taskLeft--;
+                    document.getElementById('task').textContent = taskLeft;
+
+                    tastComplete++;
+                    document.getElementById('task-com').textContent = tastComplete;
+
+                    alert('Board updated successfully')
+
+                    let currentTime = new Date().toLocaleTimeString();
+                    let tasktitle = this.parentElement.parentElement.querySelector('p').textContent;
+                    message.innerHTML = `<p>You have completed the task <p>${tasktitle}</p> at ${currentTime}</p>` + message.innerHTML; 
+
+                    this.disabled = true;
+                    this.style.backgroundColor = 'gray';
+
+                    completedTasks++;
+                    if(completedTasks === 6){
+                        alert('congratulations! You have completed all the tasks.')
+                    }
+                }
+            })
+        }
+    </script>
+    <script>
+        const bgColor = document.getElementById('bg-color')
+        function getRandomColor(){
+            let colorCode = '123456789ABCDEF';
+            let color = '#';
+            for( let i = 0; i < 6; i++){
+                color += colorCode[Math.floor(Math.random() * 16)];
+            }
+            return color;
+        }
+        bgColor.addEventListener('click', function(){
+            document.body.style.backgroundColor = getRandomColor();
+        })
+    </script>
+    <script>
+        document.getElementById('blogs').addEventListener('click',function(){
+            window.location.href = 'index1.html'
+        })
+    </script>
+    <script>
+        document.getElementById('clear').addEventListener('click',function(){
+            message.textContent = '';
+        })
+    </script>
+</body>
+</html>
